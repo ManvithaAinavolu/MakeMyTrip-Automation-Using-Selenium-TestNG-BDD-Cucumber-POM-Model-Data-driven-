@@ -34,8 +34,8 @@ public class MakeMyTripSearchteststeps extends libraryClass{
 
 	@When("Choose the From, To , Departure ,Select class for the Trains")
 	public void choose_the_from_to_departure_select_class_for_the_trains() throws InterruptedException {
-	    rp.enterFromCity("Mumbai");
-	    rp.enterToCity("Delhi");
+	    rp.enterFromCity("Chennai");
+	    rp.enterToCity("Coimbatore");
 	    rp.selectTravelDate("July 2025", "29");
 	    rp.selectTravelClass("Sleeper Class");
 	}
@@ -68,9 +68,9 @@ public class MakeMyTripSearchteststeps extends libraryClass{
 	    rp.closeLoginPopupIfPresent();
 	    rp.chooseTrains();
 	    
-	    rp.enterFromCity("Mumbai");
-	    rp.enterToCity("Delhi");
-	    rp.selectTravelDate("August 2025", "1");
+	    rp.enterFromCity("Chennai");
+	    rp.enterToCity("Coimbatore");
+	    rp.selectTravelDate("August 2025", "29");
 	    rp.selectTravelClass("Sleeper Class");
 	    rp.clickSearch();
 	    logger.info("Searched for trains...");
@@ -88,7 +88,7 @@ public class MakeMyTripSearchteststeps extends libraryClass{
 
 	@Then("Click on the preferred train")
 	public void click_on_the_preferred_train() throws InterruptedException {
-		mf.selectTrain("Ndls Tejas Raj");
+		re.clickFirstTrainCard();
 		logger.info("Train selected ...");
 	}
 

@@ -3,21 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Testcases.AllTestCases">
+      <class name="TestRunner.TestRunner2">
         <methods>
-          <include name="setTicketType"/>
-          <include name="setFilter"/>
-          <include name="closeApp"/>
-          <include name="search"/>
-          <include name="openApp"/>
-          <include name="setTrains"/>
-          <include name="setClass"/>
-          <include name="selectTrain"/>
-          <include name="chooseSort"/>
-          <include name="selectDepartureDate"/>
-          <include name="setQuotaType"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- Testcases.AllTestCases -->
+      </class> <!-- TestRunner.TestRunner2 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
